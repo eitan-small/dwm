@@ -1417,7 +1417,7 @@ runautostart(void)
 	}
 
 	/* now the non-blocking script */
-	path = ecalloc(1, strlen(dwmhome) + strlen(autostartblocksh) + 2);
+	path = ecalloc(1, strlen(dwmhome) + strlen(autostartsh) + 2);
 	if (sprintf(path, "%s/%s", dwmhome, autostartsh) <= 0) {
 		free(path);
 	}
